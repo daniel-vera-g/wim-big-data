@@ -3,6 +3,7 @@ etc
 lib
 lib64
 share
+
 notebooks/data
 notebooks/cifar_net.pth
 .ipynb_checkpoints/
