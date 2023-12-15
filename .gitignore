@@ -7,5 +7,6 @@ share
 notebooks/data
 notebooks/cifar_net.pth
 .ipynb_checkpoints/
+millionSongSubset/
 
 .DS_Store
