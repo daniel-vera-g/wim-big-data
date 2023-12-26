@@ -10,3 +10,5 @@ notebooks/cifar_net.pth
 millionSongSubset/
 
 .DS_Store
+
+pyvenv.cfg
