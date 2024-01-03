@@ -12,3 +12,7 @@ millionSongSubset/
 .DS_Store
 
 pyvenv.cfg
+
+**/batches_dir/**
+
+__pycache__
