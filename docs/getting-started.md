@@ -1,5 +1,10 @@
 # Getting started
 
+- Sample Dataset in repo
+- Detailed download + download duration
+- Muss ich die Postgres-DB mit irgendwelchen Daten initialisieren? Wenn ja, wie? oder brauche ich nur eine leere Datenbank und Spark befüllt das dann alles? Schreibt am besten auf, wie das geht. 
+- Muss ich Postgres benutzen oder tut's auch irgendeine andere Datenbank? Spark nutzt ja einen JDBC Treiber, das sollte wohl mit jeder beliebigen anderen DB auch tun. Ihr müsst das nicht ausprobieren, aber wenn ihr z.B. Postgres-Dumps importiert, solltet ihr darauf hinweisen, dann installiere ich lieber noch Postgres anstatt auszuprobieren, ob man das auch mit MySQL hinbekommt. 
+
 ### Requirements
 
 1. **MusicBrainz Dataset**: A the smaller version of the dataset is sufficient
