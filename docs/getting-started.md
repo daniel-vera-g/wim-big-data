@@ -36,10 +36,15 @@ To start the pipeline, a Jupyter Notebook is employed, which establishes connect
 
 A guide on how to install the technologies above for Mac, can be found [here](https://gist.github.com/daniel-vera-g/2c3deb6f7c0574698ac5c32a4d9913ca). After installing the needed requirements, the jupyter notebook can be run:
 
-1. Start Jupyter Notebook: `jupyter notebook`
-2. Start Spark Nodes:
+1. Create virtual environment: `python3 -m venv $PWD`
+2. Activate virtual environment: `source ./bin/activate`
+3. Install packages:
+  - `pip3 install notebook`
+  - `pip3 install findspark`
+4. Start jupyter notebook: `jupyter notebook`
+5. Start Spark Nodes:
   - Master: `./bin/spark-class org.apache.spark.deploy.master.Master`
   - 3x Worker: `./bin/spark-class org.apache.spark.deploy.worker.Worker spark://192.168.178.28:7077`
-3. Download the [PostgreSQL JDBC Driver](https://jdbc.postgresql.org/) and set the path in the jupyter notebook
-4. Set configuration variables at the top of the notebook
-5. Run! (Make sure Spark is running and the database connection works)
+6. Download the [PostgreSQL JDBC Driver](https://jdbc.postgresql.org/) and set the path in the jupyter notebook
+7. Set configuration variables at the top of the notebook
+8. Run! (Make sure Spark is running and the database connection works)
