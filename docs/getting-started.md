@@ -40,5 +40,6 @@ A guide on how to install the technologies above for Mac, can be found [here](ht
 2. Start Spark Nodes:
   - Master: `./bin/spark-class org.apache.spark.deploy.master.Master`
   - 3x Worker: `./bin/spark-class org.apache.spark.deploy.worker.Worker spark://192.168.178.28:7077`
-3. Set configuration variables at the top of the notebook
-4. Run! (Make sure Spark is running and the database connection works)
+3. Download the [PostgreSQL JDBC Driver](https://jdbc.postgresql.org/) and set the path in the jupyter notebook
+4. Set configuration variables at the top of the notebook
+5. Run! (Make sure Spark is running and the database connection works)
