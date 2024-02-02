@@ -16,4 +16,10 @@ Therefore, we looked for another music-related dataset that fulfilled our requir
 
 More information on the first steps with the database can be found under [Getting started](./getting-started.md) 
 
-As the schema on the MusicBrainz’ website suggests, the database contains many tables and relations between them. As we preferred a basic/ simple use case, we only used a small amount of the tables provided for our prototype.
+As the schema on the MusicBrainz’ website suggests, the database contains many tables and relations between them. As we preferred a basic/ simple use case, we only used a small amount of the tables provided for our prototype. More information about the used data is documented under the [data](./data.md) section.
+
+This project aims to predict the country of origin of artists with the information of the artists name, its alias and language. It leverages Apache Spark to optimize the data management and training of the model. The most important libraries that were used will be explained in the following:
+
+As seen in the [Jupyter Notebook](../notebooks/spark.ipynb), several packages from the Apache Spark/Pyspark library "pyspark.ml" such as the pipeline package were important for building the pipeline for machine learning. Packages from the "pyspark.ml.feature" library were used for the transformation and normalization of features. The machine learning model, a logistic regression, originates from the "pyspark.ml.classification" library. This includes the algorithm for the regression, but also for the subsequent evaluation of the results.
+
+This use case does not focus on the optimization of the machine learning model with its hyperparameters, but is primarily intended to demonstrate the general use of Apache Spark for machine learning applications.
