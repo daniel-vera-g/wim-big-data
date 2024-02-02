@@ -7,11 +7,9 @@
 - [Description](./docs/project.md)
 - [Implementation](./docs/implementation.md)
 - [Getting started](./docs/getting-started.md)
-- [Conclusion](./docs/conclusion.md) **TODO** 
 
 **Big Data aspects:** 
 
-- [Data management](./docs/data.md) **TODO** 
 - [Fault tolerance](./docs/fault-tolerance.md) 
 - [Scalability](./docs/scalability.md) 
 
