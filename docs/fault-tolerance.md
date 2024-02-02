@@ -1,10 +1,6 @@
 # Fault tolerance
 
-<!-- ## Fault tolerance experiments -->
-
 To evaluate the fault tolerance of our Big Data pipeline, we conducted tests under different configurations using Apache Spark. Our primary objective was to observe the tolerance behavior of the system under various kinds of interruptions.
-
-<!-- ## First mode -->
 
 ## Fault tolerance experiment
 
@@ -44,22 +40,3 @@ Nevertheless, in the master logs it could be seen that the failed executor recov
 In the Web UI, the newly spun-up executor was displayed:
 
 ![](./attachments/web-ui-kill.png) 
-
-<!-- TODO -->
-
-<!-- ### Second mode -->
-
-
-<!--  for that in the second mode worker was started with six executors. Executors were configure in the spark session configuration is follows: -->
-
-<!-- - `    .config("spark.executor.instances", 6) \` -->
-
-<!-- In the  -->
-
-<!-- --- -->
-
-<!-- - How does the system behave under Node/CPU/Memory/Hardware/... errors and failures? -->
-<!-- - What happens during network interruptions and partitioning? -->
-<!-- - How do error handling mechanisms affect efficiency/scale/latency/throughput/... etc.? -->
-<!-- - Are there any worst/best case considerations? -->
-<!-- - How does the application handle errors and distribution? -->

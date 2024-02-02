@@ -24,8 +24,6 @@ This architecture allows our solution to scale dynamically with the addition of 
 
 ## Scalability tests
 
-<!-- ## Variable Memory and CPU -->
-
 To evaluate the scalability of our Spark pipeline to varying resource allocations, we executed the pipeline multiple times, each time incrementing the executor memory and CPU allocations. This setup mirrored the configuration used in the fault tolerance test, comprising 1 master node and 3 worker nodes. During each iteration, we recorded the number of Java processes and the number of executors assigned to each worker. Furthermore, we measured the completion time for each stage of the pipeline to facilitate performance comparison:
 
 | Executor Memory (GB) | Executor Cores | Number Java processes | Number executors per worker |
@@ -62,46 +60,3 @@ The measurements indicate that the evaluation step is the most resource-intensiv
 ## Scaling on production system
 
 Summarizing, Spark demonstrates very good resource management capabilities by dynamically adjusting the number of executors based on the allocated resources, ensuring optimal utilization and efficiency. However, it's important to recognize that scalability on a local machine is limited to the given resources. Transitioning to a cluster setup, where resources can be scaled horizontally by adding more nodes, can bring big scalability and performance improvements, allowing Spark to distribute workloads more effectively across a broader array of computational resources.
-
-<!-- --- -->
-
-<!-- 2: 2+18+4+13+8+13+30+5*60+36+10 = 434 -->
-<!-- 3: 1+15+3+11+8+11+28+5*60+16+6 = 399 -->
-<!-- 6: 2+10+3+8+7+8+26+4*60+54+5 = 363 -->
-<!-- 8: 1+10+3+3+9+6+9+26+4*60+44+5 = 356 -->
-
-<!-- **Input:**  -->
-
-<!-- - Variable Ressourcen -->
-<!-- - Konstante Datenmenge -->
-
-<!-- **Output:**  -->
-
-<!-- - Zeit -->
-<!-- - Spark Auslastung -->
-
-<!-- --- -->
-
-<!-- To assess stability, we conducted two distinct evaluations. The first involved processing variable data volumes while keeping the resource allocation constant, and the second entailed processing a fixed data volume with varying levels of resources. Due to the batch processing version not being fully implemented, all tests were carried out using the Jupyter Notebook based machine learning pipeline. -->
-
-<!-- ### Variable data and fixed resources -->
-
-<!-- **Input:**  -->
-
-<!-- - Konstante Ressourcen -->
-<!-- - Variable Datenmenge -->
-<!--     - What happens when the amount of data increases in the orders of magnitude (1x/10x/100x... or 2x/4x/8x/16x/...)? -->
-<!--     - What happens if request or query intake increases ore latency conditions decrease in magnitude? -->
-
-<!-- **Output:**  -->
-
-<!-- - Zeit -->
-<!-- - Spark Auslastung -->
-
-<!-- TODO  -->
-
-<!-- - What happens when data or queries skew and bias -->
-<!-- - Is your system real-time capable? -->
-<!-- - Are there any setup/bootstrapping etc. costs? -->
-<!-- - How does the "data" run through the system? -->
-<!-- How would you dimension a real system or setup given realistic data or query sets?" -->
