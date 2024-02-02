@@ -4,14 +4,14 @@
 
 **About the Project:** 
 
-- [Description](./docs/project.md) 
-- [Implementation](./docs/implementation.md) 
-- [Getting started](./docs/getting-started.md) 
-- [Conclusion](./docs/conclusion.md) 
+- [Description](./docs/project.md) **TODO** 
+- [Implementation](./docs/implementation.md) **TODO** 
+- [Getting started](./docs/getting-started.md)
+- [Conclusion](./docs/conclusion.md) **TODO** 
 
 **Big Data aspects:** 
 
-- [Data management](./docs/data.md) 
+- [Data management](./docs/data.md) **TODO** 
 - [Fault tolerance](./docs/fault-tolerance.md) 
 - [Scalability](./docs/scalability.md) 
 
