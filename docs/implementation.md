@@ -1,5 +1,6 @@
 # Project evaluation
 
+- Volume, Variety, Velocity
 - Correctness and usefulness of the solution
 - suitability of the solution for big data scenarios (scalability, reliability, maintainability)
 - own contribution
