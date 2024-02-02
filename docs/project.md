@@ -28,7 +28,7 @@ This use case does not focus on the optimization of the machine learning model w
 
 As a Big Data project, our machine learning pipeline encounters challenges in volume, variety, and velocity. 
 
-1. **Volume**: Our dataset is composed of structured data, filled with different tables and relations. The challenge lies in discerning which data are most relevant and should be utilized, given the big dataset at our disposal.
+1. **Volume**: Our dataset is composed of structured data, filled with different tables and relations. The challenge lies in deciding which data are most relevant and should be utilized, given the big dataset at our disposal.
 2. **Variety**: Our dataset is notably structured, comprising various data forms and intricate relationships. This diversity necessitates good processing to effectively leverage the different data types and their associations.
 3. **Velocity**: Although not directly used in the project, the concept of velocity is indirectly significant. The MusicBrainz dataset, our primary data source, supports continuous updates. This constant flow of updates suggests that an future extension of our project could involve periodically refreshing our model with the latest data from the database, thereby ensuring its relevance and accuracy over time. With this, a continuous integration of new data into our model could be possible.
 
