@@ -11,7 +11,7 @@
 **Big Data aspects:** 
 
 - [Fault tolerance](./docs/fault-tolerance.md): experiments conducted to test Apache Spark's fault tolerance
-- [Scalability](./docs/scalability.md): experiments conducted to evaluate Apache Spark's scalability.
+- [Scalability](./docs/scalability.md): experiments conducted to evaluate Apache Spark's scalability
 
 ## References
 
