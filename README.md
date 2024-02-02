@@ -4,8 +4,8 @@
 
 **About the Project:** 
 
-- [Description](./docs/project.md) **TODO** 
-- [Implementation](./docs/implementation.md) **TODO** 
+- [Description](./docs/project.md)
+- [Implementation](./docs/implementation.md)
 - [Getting started](./docs/getting-started.md)
 - [Conclusion](./docs/conclusion.md) **TODO** 
 
