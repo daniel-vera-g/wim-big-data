@@ -1,5 +1,9 @@
 # Project
 
+- [ ] Was wollten wir erreichen?
+- [ ] Wie sind wir vorgegangen?
+- [ ] Welche Probleme gab es?
+
 ## Description
 
 This project aims to predict the country of origin of artists using the MusicBrainz Dataset. It leverages Apache Spark to optimize the data management and training of the model. The Goal of the project is to:

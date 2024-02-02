@@ -7,7 +7,7 @@
 - [Description](./docs/project.md) 
 - [Implementation](./docs/implementation.md) 
 - [Getting started](./docs/getting-started.md) 
-- Fazit
+- [Conclusion](./docs/conclusion.md) 
 
 **Big Data aspects:** 
 
