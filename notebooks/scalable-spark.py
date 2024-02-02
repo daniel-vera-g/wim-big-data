@@ -10,7 +10,7 @@ import findspark
 findspark.init()
 
 # Java configuration
-jarConfigPath = "/Users/d.veragillard/edu/semester/WIM-1/big-data-advanced-database/bd-project/postgresql-42.7.1.jar"
+jarConfigPath = ""
 
 # Spark configuration
 allocated_memory = "6g"
