@@ -1,41 +1,19 @@
 # Project
 
-- [ ] Was wollten wir erreichen?
-- [ ] Wie sind wir vorgegangen?
-- [ ] Welche Probleme gab es?
+## Motivation
+
+In the past, we have successfully acquired insights into how machine learning pipelines work and consider them a fascinating aspect of data processing and information technology. Our previous experience has given us an understanding of the challenges involved in developing and optimizing these pipelines.
+
+For this reason, we were very interested in exploring the implementation and performance of machine learning pipelines in Apache Spark and working out the differences between a “regular” machine learning pipeline in Python and one in Pyspark. We were also curious to find out how Spark scales using an example.
+
+Therefore we wanted to implement a simple machine learning use case and use it as an example to scale data management using Apache Spark. This requires a relatively large data set in order to fulfill the requirements of a "big data" use case.
 
 ## Description
 
-This project aims to predict the country of origin of artists using the MusicBrainz Dataset. It leverages Apache Spark to optimize the data management and training of the model. The Goal of the project is to:
+We started by looking for a suitable data set that was both easily scalable and appealing in terms of content. [The Million Song dataset](http://millionsongdataset.com/) was our first choice as it provided a large amount of data and the music theme suited us. Unfortunately, this dataset is quite “old” as it has not been updated since the 2010s and the additional code was rather outdated (very old Python version). Furthermore, we were not able to access the dataset because the links provided did not work properly and the underlying data was missing.
 
-1. Implement a simple machine learning use case.
-2. Scale data management and processing using Apache Spark.
+Therefore, we looked for another music-related dataset that fulfilled our requirements. The [MusicBrainz’ dataset](https://musicbrainz.org/doc/MusicBrainz_Database) is equally large and provides easy (and free) access. The MusicBrainz Database is built on the PostgreSQL relational database engine and contains all of MusicBrainz’ music metadata. This data includes information about artists, releases, recordings, labels and more, as well as the many relationships between them. The database also contains a full history of all the changes that the MusicBrainz’ community has made to the data.
 
-## Motivation
+More information on the first steps with the database can be found under [Getting started](./getting-started.md) 
 
-Our "artist country of origin" use case is based on a relatively large dataset. Only the Artist <-> Country relationship data takes up over one million entries:
-
-```sql
-musicbrainz> SELECT COUNT(*) FROM artist JOIN area ON artist.area = area.id;
-+---------+
-| count   |
-|---------|
-| 1112886 |
-+---------+
-SELECT 1
-Time: 0.089s
-```
-
-Trying to create a machine learning pipeline without taking in consideration the data management side of things inherently brings up memory issues. Our first version for example, had following errors:
-
-```shell
-23/12/27 10:06:08 WARN DAGScheduler: Broadcasting large task binary with size 254.3 MiB
-
-...
-
-Exception in thread "RemoteBlock-temp-file-clean-thread" java.lang.OutOfMemoryError: Java heap space Exception in thread "dispatcher-HeartbeatReceiver" java.lang.OutOfMemoryError: Java heap space Exception in thread "refresh progress" java.lang.OutOfMemoryError: Java heap space 23/12/27 10:08:06 ERROR Utils: Uncaught exception in thread executor-heartbeater java.lang.OutOfMemoryError: Java heap space
-
-org.apache.spark.SparkException: Not enough memory to build and broadcast the table to all worker nodes. As a workaround, you can either disable broadcast by setting spark.sql.autoBroadcastJoinThreshold to -1 or increase the spark driver memory by setting spark.driver.memory to a higher value
-```
-
-Therefore, a bigger focus on the data scalability was needed.
+As the schema on the MusicBrainz’ website suggests, the database contains many tables and relations between them. As we preferred a basic/ simple use case, we only used a small amount of the tables provided for our prototype.
