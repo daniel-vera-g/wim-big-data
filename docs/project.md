@@ -16,7 +16,7 @@ Therefore, we looked for another music-related dataset that fulfilled our requir
 
 More information on the first steps with the database can be found under [Getting started](./getting-started.md) 
 
-As the schema on the MusicBrainz’ website suggests, the database contains many tables and relations between them. As we preferred a basic/ simple use case, we only used a small amount of the tables provided for our prototype. More information about the used data is documented under the [data](./data.md) section.
+As the schema on the MusicBrainz’ website suggests, the database contains many tables and relations between them. As we preferred a basic/ simple use case, we only used a small amount of the tables provided for our prototype.
 
 This project aims to predict the country of origin of artists with the information of the artists name, its alias and language. It leverages Apache Spark to optimize the data management and training of the model. The most important libraries that were used will be explained in the following:
 
