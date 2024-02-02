@@ -18,7 +18,7 @@ For testing purposes, utilizing a smaller dataset is more convenient. We provide
 2. Connect to the PostgreSQL Database: `psql`
 3. Create User: `CREATE USER musicbrainz WITH PASSWORD 'yourpassword';`
 4. Create DB: `CREATE DATABASE musicbrainz OWNER musicbrainz;`
-5. Exit an enter musicbrainz DB: `psql -U musicbrainz -d musicbrainz`
+5. Exit and enter musicbrainz DB: `psql -U musicbrainz -d musicbrainz`
 6. Create Schema: `CREATE SCHEMA musicbrainz;`
 7. Import Schema: `psql -U musicbrainz -d musicbrainz -f schema_dump.sql` (Ignore the errors for the data that does not exist)
 8. Import Dump: `psql -U musicbrainz -d musicbrainz -f dump.sql`
