@@ -4,14 +4,14 @@
 
 **About the Project:** 
 
-- [Description](./docs/project.md)
-- [Implementation](./docs/implementation.md)
-- [Getting started](./docs/getting-started.md)
+- [Description](./docs/project.md): motivation, general concept and objectives of the project
+- [Implementation](./docs/implementation.md): explanation of Apache Sparks implementation in this project
+- [Getting started](./docs/getting-started.md): instructions for setting up required database
 
 **Big Data aspects:** 
 
-- [Fault tolerance](./docs/fault-tolerance.md) 
-- [Scalability](./docs/scalability.md) 
+- [Fault tolerance](./docs/fault-tolerance.md): experiments conducted to test Apache Spark's fault tolerance
+- [Scalability](./docs/scalability.md): experiments conducted to evaluate Apache Spark's scalability
 
 ## References
 

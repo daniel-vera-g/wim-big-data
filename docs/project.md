@@ -4,7 +4,7 @@
 
 In the past, we have successfully acquired insights into how machine learning pipelines work and consider them a fascinating aspect of data processing and information technology. Our previous experience has given us an understanding of the challenges involved in developing and optimizing these pipelines.
 
-For this reason, we were very interested in exploring the implementation and performance of machine learning pipelines in Apache Spark and working out the differences between a “regular” machine learning pipeline in Python and one in Pyspark. We were also curious to find out how Spark scales using an example.
+For this reason, we were very interested in exploring the implementation and performance of machine learning pipelines in Apache Spark and working out the differences between a “regular” machine learning pipeline in Python and one in PySpark. We were also curious to find out how Spark scales using an example.
 
 Therefore we wanted to implement a simple machine learning use case and use it as an example to scale data management using Apache Spark. This requires a relatively large data set in order to fulfill the requirements of a "big data" use case.
 
@@ -20,7 +20,7 @@ As the schema on the MusicBrainz’ website suggests, the database contains many
 
 This project aims to predict the country of origin of artists with the information of the artists name, its alias and language. It leverages Apache Spark to optimize the data management and training of the model. The most important libraries that were used will be explained in the following:
 
-As seen in the [Jupyter Notebook](../notebooks/spark.ipynb), several packages from the Apache Spark/Pyspark library "pyspark.ml" such as the pipeline package were important for building the pipeline for machine learning. Packages from the "pyspark.ml.feature" library were used for the transformation and normalization of features. The machine learning model, a logistic regression, originates from the "pyspark.ml.classification" library. This includes the algorithm for the regression, but also for the subsequent evaluation of the results.
+As seen in the [Jupyter Notebook](../notebooks/spark.ipynb), several packages from the Apache Spark/PySpark library "pyspark.ml" such as the pipeline package were important for building the pipeline for machine learning. Packages from the "pyspark.ml.feature" library were used for the transformation and normalization of features. The machine learning model, a logistic regression, originates from the "pyspark.ml.classification" library. This includes the algorithm for the regression, but also for the subsequent evaluation of the results.
 
 This use case does not focus on the optimization of the machine learning model with its hyperparameters, but is primarily intended to demonstrate the general use of Apache Spark for machine learning applications.
 
@@ -40,4 +40,4 @@ Upon analyzing the entire pipeline, it should be noted that the results, in term
 
 In future developments, there is potential to enhance the accuracy and effectiveness of the results, for instance, by refining the feature engineering and optimizing general machine learning and data science methodologies.
 
-Despite these challenges, the project proved to be an insightful and valuable exploration into applying big data techniques within machine learning contexts. Our experiences have opened avenues for further investigation into aspects such as capability, reliability, and maintainability of big data solutions in machine learning applications.
+Despite these challenges, the project proved to be an insightful and valuable exploration into applying Big Data techniques within machine learning contexts. Our experiences have opened avenues for further investigation into aspects such as capability, reliability, and maintainability of big data solutions in machine learning applications.
