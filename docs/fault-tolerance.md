@@ -13,7 +13,7 @@ To evaluate the fault tolerance of our Big Data pipeline, we conducted tests und
 1. Master: `./bin/spark-class org.apache.spark.deploy.master.Master`
 2. 3x Worker: `./bin/spark-class org.apache.spark.deploy.worker.Worker spark://192.168.178.28:7077`
 
-During the test, we intentionally killed workers into ways:
+During the test, we intentionally killed workers in two ways:
 
 1. Killing the process with the task manager
 2. Stopping the worker manually in the command line

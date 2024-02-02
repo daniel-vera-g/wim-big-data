@@ -38,7 +38,7 @@ To evaluate the scalability of our Spark pipeline to varying resource allocation
 The data above reveals a clear correlation between resource allocation and the number of executors per worker. This indicates that as the resource allocation per executor increases, fewer executors are required to manage the workload, resulting in a reduction in the total number of Java processes.
 Regarding executor efficiency, it is observed that a plateau in the number of executors per worker is reached with 6 GB of memory and 6 cores. This suggests an optimal point of resource allocation, beyond which additional resources do not significantly impact the number of executors needed per worker.
 
-Besides documenting ressource data, also the time for the pipeline stages was measured using the [`%%time`](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-time) python expression on each code cell. The operation with the longest time was the evaluation step. In the following, the results of the different measurements are shown:
+Besides documenting resource data, also the time for the pipeline stages was measured using the [`%%time`](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-time) python expression on each code cell. The operation with the longest time was the evaluation step. In the following, the results of the different measurements are shown:
 
 Executor Memory (GB) / Cores | Time to completion in seconds | Time for evaluation step in seconds
 --- | --- | ---
@@ -61,7 +61,7 @@ The measurements indicate that the evaluation step is the most resource-intensiv
 
 ## Scaling on production system
 
-Summarizing, Spark demonstrates very good resource management capabilities by dynamically adjusting the number of executors based on the allocated resources, ensuring optimal utilization and efficiency. However, it's important to recognize that scalability on a local machine is limited to the given ressources. Transitioning to a cluster setup, where resources can be scaled horizontally by adding more nodes, can bring big scalability and performance improvements, allowing Spark to distribute workloads more effectively across a broader array of computational resources.
+Summarizing, Spark demonstrates very good resource management capabilities by dynamically adjusting the number of executors based on the allocated resources, ensuring optimal utilization and efficiency. However, it's important to recognize that scalability on a local machine is limited to the given resources. Transitioning to a cluster setup, where resources can be scaled horizontally by adding more nodes, can bring big scalability and performance improvements, allowing Spark to distribute workloads more effectively across a broader array of computational resources.
 
 <!-- --- -->
 
