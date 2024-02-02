@@ -18,3 +18,5 @@ pyvenv.cfg
 __pycache__
 
 spark.py
+
+*dump.sql
