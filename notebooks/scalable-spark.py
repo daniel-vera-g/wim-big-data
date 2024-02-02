@@ -10,7 +10,7 @@ import findspark
 findspark.init()
 
 # Java configuration
-jarConfigPath = "/Users/d.veragillard/edu/semester/WIM-1/big-data-advanced-database/bd-project/postgresql-42.7.1.jar"
+jarConfigPath = ""
 
 # Spark configuration
 allocated_memory = "6g"
@@ -58,7 +58,7 @@ def collect_data(spark, database_url, properties, limit, offset):
     language_query = f"(SELECT * FROM language LIMIT {limit} OFFSET {offset}) AS temp_table"
     alias_query = f"(SELECT * FROM artist_alias LIMIT {limit} OFFSET {offset}) AS temp_table"
 
-    # TODO DOING!
+    # TODO
     
     # Read data from artist and area tables with only necessary columns
     artist_df = spark.read.jdbc(url=database_url, table=artist_query, properties=properties).select("id", "name", "area")
